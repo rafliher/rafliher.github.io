@@ -8,26 +8,24 @@ nav {
     top: 0;
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     width: 100%;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
-    background: rgba(0, 0, 0, 0.332);
-    backdrop-filter: blur(10px);
+    background: rgba(30, 3, 41, 0.932);
+    backdrop-filter: blur(30px);
     padding: 10px;
+    z-index: 10;
 }
 
 nav>a {
     text-decoration: none;
     margin: 10px;
-    color: grey;
+    color: white;
     cursor: pointer;
 }
 
-nav>a:hover {
-    color: white;
-}
 .nav-links {
     margin: 5px;
     padding: 5px;
@@ -37,27 +35,8 @@ nav>a:hover {
 .nav-links>a {
     text-decoration: none;
     margin: 10px;
-    color: grey;
-    cursor: pointer;
-}
-
-.nav-links>a:hover {
     color: white;
-}
-
-.nav-profile {
-    margin: 10px;
-    color: grey;
     cursor: pointer;
-}
-
-.nav-profile:hover {
-    color: white;
-}
-
-.nav-profile:hover .logout {
-    transition: opacity 3s ease-in-out;
-    display: block;
 }
 
 h3 {
@@ -74,7 +53,7 @@ footer {
     font-weight: bold;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background: rgba(0, 0, 0, 0.332);
+    background: rgba(30, 3, 41, 0.932);
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
@@ -92,6 +71,14 @@ body {
 }
 
 .controlBanner>img{
+    position: fixed;
+    width: calc((100vw - 960px)/2 - 10px);
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+}
+
+.creditBanner>img{
     position: fixed;
     width: calc((100vw - 960px)/2 - 10px);
     top: 50%;
